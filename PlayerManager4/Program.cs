@@ -33,11 +33,11 @@ namespace PlayerManager4
         {
             if (_ascend == true)
             {
-                return two.Score - one.Score;
+                return two.Name.CompareTo(one.Name);
             }
             else
             {
-                return one.Score - two.Score;
+                return one.Name.CompareTo(two.Name);
             }
         }
     }
